@@ -1,0 +1,26 @@
+[
+    {
+        "accentColor": "#B22222",
+        "backgroundImage": "https://e-cdns-images.dzcdn.net/images/artist/32b909447841adfe4fd4770b1c1530ed/500x500-000000-80-0-0.jpg",
+        "artistName": "OutKast",
+        "id": "9"
+    },
+    {
+        "accentColor": "#FAF089",
+        "backgroundImage": "https://e-cdns-images.dzcdn.net/images/artist/19cc38f9d69b352f718782e7a22f9c32/500x500-000000-80-0-0.jpg",
+        "artistName": "Eminem",
+        "id": "13"
+    },
+    {
+        "accentColor": "#D53F8C",
+        "backgroundImage": "https://e-cdns-images.dzcdn.net/images/artist/f2bc007e9133c946ac3c3907ddc5d2ea/500x500-000000-80-0-0.jpg",
+        "artistName": "Daft Punk",
+        "id": "27"
+    },
+    {
+        "accentColor": "#DD6B20",
+        "backgroundImage": "https://e-cdns-images.dzcdn.net/images/artist/5d2fa7f140a6bdc2c864c3465a61fc71/500x500-000000-80-0-0.jpg",
+        "artistName": "Drake",
+        "id": "246791"
+    }
+]
