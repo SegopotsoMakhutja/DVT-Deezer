@@ -18,7 +18,8 @@
     "resolveJsonModule": true,
     "isolatedModules": false,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "./src", // will help to resolve relative paths, should setup @aliases to move files easily.
   },
   "rules": {
     "@typescript-eslint/no-explicit-any": "off"
