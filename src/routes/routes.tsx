@@ -1,5 +1,5 @@
 import { ReactLocation } from "@tanstack/react-location";
-import { Home, SearchResults, Trending } from '../views';
+import { Home, SearchResults, Trending, Artist, Album } from '../views';
 
 // Set up a ReactLocation instance
 export const location = new ReactLocation();
@@ -9,6 +9,6 @@ export const routes = [
     { path: "/", element: <Home /> },
     { path: "/search/results/:search", element: <SearchResults /> },
     { path: "/trending", element: <Trending /> },
-    // { path: "/explore/artist/:id", element: <Artist /> },
-    // { path: "/album/details/:id", element: <Album /> },
+    { path: "/explore/artist/:id", element: <Artist /> },
+    { path: "/album/details/:id", element: <Album /> },
 ]
