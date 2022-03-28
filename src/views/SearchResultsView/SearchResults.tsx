@@ -1,10 +1,7 @@
-import { PageWrap } from "components/layouts";
+import { ArtistCard, PageWrap, HeaderTitle, Loader } from "components";
 import { Grid, Divider } from "@chakra-ui/react";
-import { HeaderTitle } from "components/Header/HeaderTitle";
-import { Loader } from "components/Loader";
 import { ArtistDataContext } from 'context/ArtistContextProvider';
 import { useContext } from "react";
-import { ArtistCard } from "components/Card/ArtistCard";
 
 const SearchResults = () => {
     const { artistData } = useContext(ArtistDataContext);

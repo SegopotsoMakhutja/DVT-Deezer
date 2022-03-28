@@ -1,7 +1,5 @@
-import { PageWrap } from "components/layouts";
+import { PageWrap, HeaderTitle, FeaturedArtists } from "components";
 import { Divider, Heading, Flex } from "@chakra-ui/react";
-import FeaturedArtists from "components/FeaturedArtists/FeaturedArtists";
-import { HeaderTitle } from "components/Header/HeaderTitle";
 import FeaturedArtistData from "./FeaturedArtist.json";
 
 const artists = FeaturedArtistData
