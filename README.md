@@ -88,7 +88,27 @@ React in production mode and optimizes the build for the best performance.
 | featured artists on home page.                                  |         ✔️ 
 | trending charts for albums.                                     |         ✔️ 
 | unit tests and linting must pass.                               |         ✔️ 
-| supports dark / light mode.                               |         ✔️ 
+| supports dark / light mode.                                     |         ✔️ 
+
+## 📸 Screenshots
+
+#### Home View Light Mode
+![Alt text](/public/Screenshot%202022-03-28%20at%2021.18.14.png?raw=true "Home View Light Mode")
+#### Home View Dark Mode
+![Alt text](/public/Screenshot%202022-03-28%20at%2021.18.34.png?raw=true)
+
+#### Trending charts
+![Alt text](/public/Screenshot%202022-03-28%20at%2023.12.54.png?raw=true)
+
+#### Search Results
+![Alt text](/public/Screenshot%202022-03-28%20at%2023.26.59.png?raw=true)
+
+#### Mobile Home View 
+![Alt text](/public/Screenshot%202022-03-28%20at%2023.27.37.png?raw=true)
+
+#### Mobile Search Results 
+![Alt text](/public/Screenshot%202022-03-28%20at%2023.28.28.png?raw=true)
+
 
 ## Enhancements
 - [ ] turn home page featured artist to carousel.

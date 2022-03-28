@@ -17,10 +17,12 @@ import {
 import { NavItem } from '../NavItem';
 import { LinkItemProps, SidebarProps, } from '../Sidebar.types';
 
+import { generateRating } from "utils/helpers";
+
 const NavItems: Array<LinkItemProps> = [
     { name: 'Home', icon: FiHome, path: '/', },
     { name: 'Trending', icon: FiTrendingUp, path: '/trending', },
-    { name: 'Explore', icon: FiCompass, path: '/explore/artist/', },
+    { name: 'Explore', icon: FiCompass, path: `/explore/artist/${generateRating()}`, },
     { name: 'Favourites', icon: FiStar, path: '/favourites', },
     { name: 'Settings', icon: FiSettings, path: '/settings', },
 ];
