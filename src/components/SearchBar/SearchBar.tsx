@@ -4,7 +4,6 @@ import { FiSearch } from 'react-icons/fi';
 import { useForm, SubmitHandler } from "react-hook-form";
 import axios from 'axios';
 import { ArtistDataContext } from 'context/ArtistContextProvider';
-import { Loader } from 'components/Loader';
 import { useNavigate } from '@tanstack/react-location';
 
 const { REACT_APP_API_HOST, REACT_APP_PROXY_HOST } = process.env;

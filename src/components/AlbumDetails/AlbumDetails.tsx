@@ -1,4 +1,5 @@
 import {
+    useColorModeValue,
     Table,
     Thead,
     Tbody,
@@ -7,13 +8,12 @@ import {
     Td,
     Image,
     Text,
-    useColorModeValue,
     Container,
     Flex,
     IconButton,
 } from '@chakra-ui/react'
 import axios from 'axios';
-import { Loader } from 'components';
+import { Loader } from 'components/Loader';
 import { FiPlayCircle } from 'react-icons/fi';
 import { useEffect, useState } from 'react';
 import { formatDuration } from 'utils/helpers';
@@ -83,7 +83,7 @@ const AlbumDetails = ({ albumId }: { albumId: string }) => {
                                     }}
                                 >
                                     <Td>{track.title}</Td>
-                                    <Td> {formatDuration(track.duration)} </Td>
+                                    <Td color={'blue.300'}> {formatDuration(track.duration)} </Td>
                                     <Td>
                                         <IconButton
                                             variant="ghost"
