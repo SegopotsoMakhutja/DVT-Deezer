@@ -17,9 +17,9 @@ const SearchBar: FC<InputProps> = ({ ...rest }: InputProps) => {
 
     const navigate = useNavigate();
     // using a form submit handler, to avoid making multiple api calls whenever the search input changes
-    const onSubmit: SubmitHandler<{ searchInput: string }> = data => {
-
-        axios.get(`${REACT_APP_PROXY_HOST}/${REACT_APP_API_HOST}/search/artist?q=${data.searchInput}`).then((res) => {
+    const onSubmit: SubmitHandler<{ searchInput: string }> = async (data, e) => {
+        e?.preventDefault();
+        await axios.get(`${REACT_APP_PROXY_HOST}/${REACT_APP_API_HOST}/search/artist?q=${data.searchInput}`).then((res) => {
             setArtistDetails(res.data.data);
         })
 
@@ -29,25 +29,23 @@ const SearchBar: FC<InputProps> = ({ ...rest }: InputProps) => {
         });
 
         navigate({ to: `/search/results/${data.searchInput}`, replace: true })
-
     };
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
             <InputGroup>
-                {isSubmitting && <Loader />}
-
                 <InputLeftElement
                     pointerEvents='none'
-                    children={<FiSearch color='gray.300' />}
+                    children={<FiSearch color='gray.300' type={"submit"} />}
                 />
                 <Input
                     {...rest}
                     {...register('searchInput')}
                 />
-                <InputRightElement>
-                    {isSubmitting && <Spinner />}
-                </InputRightElement>
+                <InputRightElement
+                    pointerEvents='none'
+                    children={isSubmitting && <Spinner />}
+                />
             </InputGroup>
         </form>
     )

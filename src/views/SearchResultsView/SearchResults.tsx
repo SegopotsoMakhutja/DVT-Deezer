@@ -22,6 +22,7 @@ const SearchResults = () => {
                 {artistData.artistDetails ? artistData.artistDetails.map((artist: any) => {
                     return (
                         <ArtistCard
+                            key={artist.id}
                             name={artist.name}
                             nbFans={artist.nb_fan}
                             picture={artist.picture_medium}

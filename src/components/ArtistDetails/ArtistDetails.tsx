@@ -66,7 +66,7 @@ const ArtistDetails = ({ artistId }: { artistId: string }) => {
                             this text shouldn't be here, for accessibility reasons.
                             sacrificing accessibility for appearance
                             throws a warning in the console.
-                        */}
+                            */}
                             <Text fontSize={"2xl"} fontWeight={"600"} p={{ base: 2, md: 4 }}>Top Tracks</Text>
                             <Tr>
                                 <Th> Track Title </Th>
@@ -75,18 +75,17 @@ const ArtistDetails = ({ artistId }: { artistId: string }) => {
                             </Tr>
                         </Thead>
                         <Tbody>
-                            {topTracks.data && topTracks.data ? topTracks.data.map((track: any, i: number) => {
+                            {topTracks.data ? topTracks.data.map((track: any, i: number) => {
                                 return (
                                     <Tr
-                                        key={i}
+                                        key={i + track.title}
                                         _hover={{
-                                            bg: 'Teal 500',
                                             transform: 'translateY(-4px)',
                                             boxShadow: 'xl',
                                         }}
                                     >
                                         <Td>{track.title}</Td>
-                                        <Td> {formatDuration(track.duration)} </Td>
+                                        <Td color={'blue.300'}> {formatDuration(track.duration)} </Td>
                                         <Td>
                                             <IconButton
                                                 variant="ghost"

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from 'axios';
 import { Grid, Divider } from "@chakra-ui/react";
+import { generateRating } from "utils/helpers";
 
 import { PageWrap, AlbumCard, HeaderTitle, Loader } from "components";
 
@@ -11,7 +12,7 @@ const Trending = () => {
     const [trendingCharts, setTrendingCharts] = useState<any>({})
 
     const getTrendingCharts = () => {
-        axios.get(`${REACT_APP_PROXY_HOST}/${REACT_APP_API_HOST}/chart/0`).then((res) => {
+        axios.get(`${REACT_APP_PROXY_HOST}/${REACT_APP_API_HOST}/chart/${generateRating()}`).then((res) => {
             setTrendingCharts(res.data);
         })
     }
