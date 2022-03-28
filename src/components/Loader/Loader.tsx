@@ -4,7 +4,7 @@ import { Wrapper } from "./Loader.styles";
 const Loader = () => {
     return (
         <Wrapper>
-            <CircularProgress isIndeterminate color='#2193b0' size={'lg'} />
+            <CircularProgress isIndeterminate color='#2193b0' />
         </Wrapper>
     );
 };
